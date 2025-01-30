@@ -1,0 +1,404 @@
+/* Variables globales pour les couleurs */
+:root {
+    --color-service: #4a90e2;
+    --color-employe: #ffd700;
+    --color-salle: #2ecc71;
+    --color-default: #e0e0e0;
+    --shadow-default: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 45px;
+}
+
+/* Styles des boutons */
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#primary-btn {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.primary-btn-salle {
+    background-color: #333;
+    color: white;
+    margin: 0 10px;
+}
+
+/* Couleurs spécifiques pour chaque bouton principal */
+.primary-btn-salle:nth-of-type(1) {
+    background-color: var(--color-service)
+}
+.primary-btn-salle:nth-of-type(1):hover {
+    background-color: #357abd;
+}
+
+.primary-btn-salle:nth-of-type(2) {
+    background-color: var(--color-employe);
+    color: #333;
+}
+.primary-btn-salle:nth-of-type(2):hover {
+    background-color: #e5c100;
+}
+
+.primary-btn-salle:nth-of-type(3) {
+    background-color: var(--color-salle);
+}
+.primary-btn-salle:nth-of-type(3):hover {
+    background-color: #27ae60;
+}
+
+/* Boutons secondaires */
+[class^="secondary-btn-"] {
+    margin-top: 20px;
+}
+
+.secondary-btn-service {
+    border: 2px solid var(--color-service);
+    background-color: white;
+    color: #333;
+}
+.secondary-btn-service:hover {
+    background-color: var(--color-service);
+    color: white;
+}
+
+.secondary-btn-employe {
+    border: 2px solid var(--color-employe);
+    background-color: white;
+    color: #333;
+}
+.secondary-btn-employe:hover {
+    background-color: var(--color-employe);
+    color: #333;
+}
+
+.secondary-btn-salle {
+    border: 2px solid var(--color-salle);
+    background-color: white;
+    color: #333;
+}
+.secondary-btn-salle:hover {
+    background-color: var(--color-salle);
+    color: white;
+}
+
+/* Styles des cartes de contenu */
+#contenu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-default);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    border: 4px solid var(--color-default);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.message-default {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 40px 0;
+}
+
+/* Message par défaut */
+.message-default {
+    font-size: 1.2em;
+    color: #666;
+    margin: 40px 0;
+    font-style: italic;
+}
+
+.carte-default {
+    border-color: #999 !important;
+}
+
+/* Styles des cartes selon l'interface */
+.carte-service {
+    border-color: #4a90e2 !important;
+}
+
+.carte-employe {
+    border-color: #ffd700 !important;
+}
+
+.carte-salle {
+    border-color: #2ecc71 !important;
+}
+/* Styles des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow-default);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Formulaires */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: var(--color-service);
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-salle);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Styles spécifiques pour chaque interface */
+.carte-ihm_service {
+    border-color: var(--color-service) !important;
+}
+
+.carte-ihm_employe {
+    border-color: var(--color-employe) !important;
+}
+
+.carte-ihm_salle {
+    border-color: var(--color-salle) !important;
+}
+
+.carte-inserer_service {
+    border-color: var(--color-service) !important;
+}
+
+.carte-inserer_employe {
+    border-color: var(--color-employe) !important;
+}
+
+.carte-inserer_salle {
+    border-color: var(--color-salle) !important;
+}
+
+/* Positionnement du bouton "Ajouter" sous le tableau */
+#contenu button {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style pour les titres h2 */
+#contenu h2 {
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Messages de succès ou d'erreur */
+p {
+    font-size: 0.9em;
+    color: #444;
+}
+
+p[style='color: green;'] {
+    color: green;
+    font-weight: bold;
+}
+
+p[style*='Erreur'] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style responsive du tableau */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Style pour les titres h2 */
+#contenu h2 {
+    color: #333;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Positionnement du bouton "Ajouter" sous le tableau */
+#contenu button {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style pour le formulaire */
+fieldset {
+    width: 50%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style des labels */
+label {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Style des champs de texte et du select */
+input[type="text"],
+select {
+    padding: 8px;
+    font-size: 0.95em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Style du bouton submit */
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Messages de succès ou d'erreur */
+p {
+    font-size: 0.9em;
+    color: #444;
+}
+
+p[style='color: green;'] {
+    color: green;
+    font-weight: bold;
+}
+
+p[style*='Erreur'] {
+    color: red;
+    font-weight: bold;
+}
