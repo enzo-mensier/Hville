@@ -12,9 +12,9 @@ Le centre hospitalier **Hville**, cherche à mettre en place des signalétiques 
 ▪ La température de la chambre médicalisée,<br>
 ▪ Le numéro de la chambre ou le bureau.
 
-<u>Le responsable informatique vous a choisis comme technicien responsable de cette tâche pour permettre la prise en compte des besoins suivants :</u>
-▪ Mise en place d’une base de données avec une meilleure sécurité,
-▪ Améliorer l’accès aux ressources,
+<u>Le responsable informatique vous a choisis comme technicien responsable de cette tâche pour permettre la prise en compte des besoins suivants :</u><br>
+▪ Mise en place d’une base de données avec une meilleure sécurité,<br>
+▪ Améliorer l’accès aux ressources,<br>
 ▪ Réduire la consommation électrique.
 
 ## Extrait du projet
